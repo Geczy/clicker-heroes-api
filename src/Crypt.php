@@ -161,7 +161,8 @@ class Crypt
 	 */
 	private function getCurrentSalt()
 	{
-		return end(array_values($this->known_salts));
+		$salts = array_values($this->known_salts);
+		return end($salts);
 	}
 
 	/**
@@ -172,7 +173,8 @@ class Crypt
 	 */
 	private function getCurrentDelimiter()
 	{
-		return end(array_values($this->known_delimiters));
+		$delimiters = array_values($this->known_delimiters);
+		return end($delimiters);
 	}
 
 	/**
