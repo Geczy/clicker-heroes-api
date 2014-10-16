@@ -29,9 +29,9 @@ class Crypt
 	 *
 	 * @var array
 	 */
-	private $known_salts = [
+	private $known_salts = array(
 		'af0ik392jrmt0nsfdghy0' // version 0.14
-	];
+	);
 
 	/**
 	 * Salt that is found to work in with the
@@ -46,9 +46,9 @@ class Crypt
 	 *
 	 * @var array
 	 */
-	private $known_delimiters = [
+	private $known_delimiters = array(
 		'Fe12NAfA3R6z4k0z' // version 0.14
-	];
+	);
 
 	/**
 	 * Anti-cheat delimiter that is placed between
